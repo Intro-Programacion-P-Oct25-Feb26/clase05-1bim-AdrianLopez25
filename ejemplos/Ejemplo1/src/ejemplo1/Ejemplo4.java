@@ -7,46 +7,27 @@
  * un mensaje como sigue: Estudiante aprobado con un promedio: 8.1
  */
 package ejemplo1;
+
 import java.util.Locale;
 import java.util.Scanner;
 /**
  *
  * @author reroes
  */
-public class Ejemplo1 {
-    
+public class Ejemplo4 {
 
     public static void main(String[] args) {
-        // Condicionales simplesmain
+        // Condicionales simples
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        
-        /*
-        double promedio:
-        System.out.println("Ingrese un valor para analizar");
+        double promedio;
+        System.out.println("Ingrese la nota necesaria");
         promedio = entrada.nextDouble();
-        */
-        
-        double limiteNotas = 6.9;
-        
-        System.out.println("Ingrese un valor para analizar");
-        double promedio = entrada.nextDouble();
-                
-        
-        if (promedio >= 7.5) {
-            System.out.printf("Estudiante aprobado con un "
-                    + "promedio: %.2f\n", promedio);
-        }
 
-        if (promedio == 7.5) {
+        if (promedio >= 7.5 && promedio <=10) { // Falso
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
-        }
-
-        if (promedio < 7.5) {
-            System.out.printf("Estudiante aprobado con un "
-                    + "promedio: %.2f\n", promedio);
-        }
+        } // -------------
     }
 
 }

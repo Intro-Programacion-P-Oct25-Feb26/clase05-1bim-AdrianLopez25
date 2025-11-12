@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo1 {
+public class Ejemplo3 {
     
 
     public static void main(String[] args) {
@@ -26,24 +26,25 @@ public class Ejemplo1 {
         System.out.println("Ingrese un valor para analizar");
         promedio = entrada.nextDouble();
         */
-        
-        double limiteNotas = 6.9;
+        // Ingresar por teclado el limite de Notas
+        double limiteNotas;
         
         System.out.println("Ingrese un valor para analizar");
-        double promedio = entrada.nextDouble();
-                
-        
-        if (promedio >= 7.5) {
+        limiteNotas = entrada.nextDouble();
+        double promedio;        
+        System.out.println("Ingrese el promedio");
+        promedio = entrada.nextDouble();
+        if (promedio >= limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio == 7.5) {
+        if (promedio == limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio < 7.5) {
+        if (promedio < limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
