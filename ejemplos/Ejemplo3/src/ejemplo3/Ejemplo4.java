@@ -24,7 +24,7 @@ public class Ejemplo4 {
         // >= 5 and < 7.5 Suspenso
         // >= 3 and < 5 Recuperación
         // < 3 Reprobado
-        double promedio = 2;
+        double promedio = 2.9;
 
         if (promedio >= 7.5) {
             System.out.printf("Estudiante aprobado con un "
@@ -33,17 +33,17 @@ public class Ejemplo4 {
             if ((promedio >= 5) && (promedio < 7.5)) {
                 System.out.printf("Estudiante en suspenso con un "
                         + "promedio: %.2f\n", promedio);
-               } else {
-            if ((promedio >= 3) && (promedio < 5)) {
-                System.out.printf("Estudiante en recuperacion con "
-                        + "promedio: %.2f\n", promedio);
-                
             } else {
+                if ((promedio >=3) && (promedio <5)) {
+                  System.out.printf("Estudiante en recuperacion con un "
+                        + "promedio: %.2f\n", promedio);  
+                } else {
                 System.out.printf("Estudiante reprobado con un "
                         + "promedio: %.2f\n", promedio);
             }
 
         }
-            }
+    }
 
-        }
+    }
+    }

@@ -16,7 +16,7 @@ package ejemplo3;
  *
  * @author reroes
  */
-public class Ejemplo7 {
+public class Ejemplo8 {
 
     public static void main(String[] args) {
         // Condicionales aninados
@@ -27,31 +27,33 @@ public class Ejemplo7 {
         // cualquier optra nota, sera nota fuera de rango
         // las notas no pueden pasar de 10
         // si la nota fuera de rango es negativa hay que indicarlo
-        double promedio = 8.5;
+        double promedio = 2.978;
         String mensaje = "";
 
         if ((promedio >= 7.5) && (promedio <= 10)) {
-            System.out.printf("Estudiante aprobado con un "
-                   + "promedio: %.2f\n", promedio);
-            
+            //System.out.printf("Estudiante aprobado con un "
+                  //  + "promedio: %.2f\n", promedio);
+            //mensaje = "Estudiante aprobado con un promedio:" + promedio; 
+            mensaje = String.format("Estudiante aprobado con un "
+                    + "promedio: %.2f\n", promedio);
         } else {
             if ((promedio >= 5) && (promedio < 7.5)) {
-                System.out.printf("Estudiante en suspenso con un "
+                mensaje = String.format("Estudiante en suspenso con un "
                         + "promedio: %.2f\n", promedio);
             } else {
                 if ((promedio >= 3) && (promedio < 5)) {
-                    System.out.printf("Estudiante en recuperacion con un "
+                    mensaje = String.format("Estudiante en recuperacion con un "
                             + "promedio: %.2f\n", promedio);
                 } else {
                     if ((promedio >= 0) && (promedio < 3)) {
-                        System.out.printf("Estudiante en reprobado con un "
+                        mensaje = String.format("Estudiante reprobado con un "
                                 + "promedio: %.2f\n", promedio);
                     } else {
                         if (promedio > 10) {
-                            System.out.printf("fuera de rango"
+                            mensaje = String.format("fuera de rango"
                                     + "%.2f\n", promedio);
                         } else {
-                            System.out.printf("La nota "
+                            mensaje = String.format("La nota "
                                     + "%.2f esta fuera de rango2", promedio);
                         }
 
@@ -60,6 +62,6 @@ public class Ejemplo7 {
 
             }
         }
-   
+        System.out.printf("%s\n",mensaje);
     }
 }
