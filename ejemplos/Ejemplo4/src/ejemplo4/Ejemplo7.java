@@ -31,7 +31,8 @@ public class Ejemplo7 {
         // Si el valor de ciudad es 
         // "Loja" se obtiene "L"
 
-        if ( inicial.equals("G") || inicial.equals("g")
+        if (inicial.equals("L") || inicial.equals("l") ||inicial.equals("G") 
+                || inicial.equals("g")
                 || inicial.equals("P")|| inicial.equals("p"))  {
             System.out.printf("%s\n", "acceso correcto");
         } else {
