@@ -23,8 +23,8 @@ public class Ejemplo5 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
-
-        if (!ciudad.equals("Loja")) {
+        // Aqui estoy negando una variable que es Loja
+        if (!ciudad.equals("Loja")) {     
             System.out.printf("%s\n", "acceso correcto");
         } else {
             System.out.printf("%s\n", "acceso incorrecto");
@@ -32,7 +32,7 @@ public class Ejemplo5 {
 
         int numero = 10;
 
-        if (numero != 10) {
+        if (numero != 10) {// Aqui estoy negando una variable de tipo entero
             System.out.println("correcto");
         }
 

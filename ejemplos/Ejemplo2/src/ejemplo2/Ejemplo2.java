@@ -30,6 +30,7 @@ public class Ejemplo2 {
         String miNombre;
         int edad;
         String ciudad;
+        
         System.out.println("Ingrese el nombre por favor");
         miNombre = entrada.nextLine();
         System.out.println("Ingrese el promedio por favor");
